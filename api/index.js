@@ -39,7 +39,7 @@ app.use(express.json());
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin:'https://airbnb-clone-rrxg.vercel.app/',  // Fall back to the Vercel URL if CLIENT_URL is not set
     credentials: true,
   })
 );
